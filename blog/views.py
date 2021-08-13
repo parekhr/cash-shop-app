@@ -73,5 +73,6 @@ def checkout(request):
 def cart(request):
     return render(request, 'blog/cart.html', {'title': 'Cart'})
 
-
+def cash_shop(request):
+    return render(request, 'blog/cash_shop.html', {'title': 'Cash Shop'})
 

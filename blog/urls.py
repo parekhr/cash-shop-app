@@ -12,6 +12,7 @@ urlpatterns = [
     path('post/<int:pk>/delete/', PostDeleteView.as_view(), name='post-delete'),
     path('about/', views.about, name='blog-about'),
     path('checkout/', views.checkout, name='checkout'),
+    path('cash_shop/', views.cash_shop, name='cash_shop'),
     path('cart/', views.cart, name='cart'),
 ]
 

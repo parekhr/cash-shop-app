@@ -1,0 +1,71 @@
+{% extends "blog/base.html" %}
+{% block content %}
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="container">
+    <div class="row">
+        <!-- Product-->
+        <div class="col-lg-4 col-sm-6 mb-30">
+            <div class="product-card mx-auto mb-3">
+                <div class="product-head d-flex justify-content-between align-items-center"><span class="badge badge-danger">Sale</span>
+                    <div class="rating-stars"><i class="fa fa-star active"></i><i class="fa fa-star active"></i><i class="fa fa-star active"></i><i class="fa fa-star active"></i><i class="fa fa-star"></i>
+                    </div>
+                </div>
+                <a class="product-thumb" href="#"><img src="https://maplestory.io/api/GMS/224/item/1702565/icon" alt="Product Thumbnail" width="150px"></a>
+                <div class="product-card-body"><a class="product-meta" href="#">Weapon</a>
+                    <h5 class="product-title"><a href="#">Death's Scythe</a></h5><span class="product-price">
+                    <del>15,000 NX</del> 6,400 NX</span>
+                </div>
+                <div class="product-buttons-wrap">
+                    <div class="product-buttons">
+                        <div class="product-button"><a href="#" ><i class="fa fa-shopping-cart"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Product-->
+        <div class="col-lg-4 col-sm-6 mb-30">
+            <div class="product-card mx-auto mb-5">
+                <div class="product-head text-right">
+                    <div class="rating-stars"><i class="fa fa-star active"></i><i class="fa fa-star active"></i><i class="fa fa-star active"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                    </div>
+                </div>
+                <a class="product-thumb" href="#"><img src="https://maplestory.io/api/GMS/224/item/1102801/icon" alt="Product Thumbnail" width="150px"></a>
+                <div class="product-card-body"><a class="product-meta" href="#">Cape</a>
+                    <h5 class="product-title"><a href="#">Silver Wolf Cape</a></h5><span class="product-price">3,200 NX</span>
+                </div>
+                <div class="product-buttons-wrap">
+                    <div class="product-buttons">
+                        <div class="product-button"><a href="{% url 'cart' %}" ><i class="fa fa-shopping-cart"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Product-->
+        <div class="col-lg-4 col-sm-6 mb-30">
+            <div class="product-card mx-auto mb-5">
+                <div class="product-head"><span class="badge badge-secondary">Out of Stock</span></div>
+                <a class="product-thumb" href="#"><img src="https://maplestory.io/api/GMS/224/item/1004503/icon" alt="Product Thumbnail" width="150px"></a>
+                <div class="product-card-body"><a class="product-meta" href="#">Hat</a>
+                    <h5 class="product-title"><a href="#">Cat Hood</a></h5><span class="product-price text-muted">4,800 NX</span>
+                </div>
+                <div class="product-buttons-wrap">
+                    <div class="product-buttons">
+                        <div class="product-button"><a href="{% url 'cart' %}"><i class="fa fa-shopping-cart"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.10.0/feather.js"></script>
+<style>
+    body { 
+      background-image: url('https://wallpaperaccess.com/full/1251663.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      overflow-y: scroll;
+    }
+  </style>
+{% endblock content %}
