@@ -3,6 +3,9 @@ from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.contrib.auth.models import User
 from .models import Post
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
+import pandas as pd
+import json
+import sys
 
 def home(request):
     context = {
@@ -68,5 +71,11 @@ def about(request):
     return render(request, 'blog/about.html', {'title': 'About'})
 
 def checkout(request):
-    return render(request, 'blog/checkout.html')
+    names = {'Numbers': 5}
+    return render(request, 'blog/checkout.html', {'title': 'Checkout'}, names)
+
+def cart(request):
+    return render(request, 'blog/cart.html', {'title': 'Cart'})
+
+
 
