@@ -3,15 +3,8 @@ from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.contrib.auth.models import User
 from .models import Post
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
-import pandas as pd
-import json
-import sys
 
-def home(request):
-    context = {
-        'posts': Post.objects.all()
-    }
-    return render(request, 'blog/home.html', context)
+
 
 #Creating list view
 class PostListView(ListView):
@@ -20,6 +13,9 @@ class PostListView(ListView):
     context_object_name = 'posts'
     ordering = ['-date_posted']
     paginate_by = 5
+    names = {'Numbers': 5}
+    def blah(request):
+        return print("hi")
 
 class UserPostListView(ListView):
     model = Post

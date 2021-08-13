@@ -1,6 +1,5 @@
 body {
     margin-top: 5rem;
-    background-image: url('static/MaplestoryWallpaper.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -100,4 +99,16 @@ body {
 
   #circle {
     background: url('https://imgur.com/gallery/l3rmaxI');
+  }
+
+  .carousel-item img {
+    margin: center;
+  }
+
+  .carousel {
+    margin: 0 auto;
+  }
+
+  .tablecolor {
+    background: rgba(255,255,255,0.5);
   }
