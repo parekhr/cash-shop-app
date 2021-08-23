@@ -21,3 +21,10 @@ class Profile(models.Model):
                 img.thumbnail(output_size)
                 img.save(self.image.path)
 
+class Item(models.Model):
+    item_name = models.CharField(max_length=50)
+    item_category = models.CharField(max_length=12)
+    item_id = models.IntegerField()
+
+    def __str__(self):
+        return self.item_name
